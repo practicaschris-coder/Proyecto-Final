@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecoHome - Contacto</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/utils.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/dom-manager.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui-handlers.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script></head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>DecoHome</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html" class="active">Contacto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="galeria.html">Galería</a>
+        <a href="politicas.html">Politica</a>
+        <a href="envios.html">Envios</a>
+        <a href="pago.html">Pago</a>
+        <a href="registro.html">Registro</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Formulario de contacto -->
+  <div class="container">
+    <h2>Formulario de Contacto</h2>
+    <form>
+      <!-- Campo de texto -->
+      <input type="text" placeholder="Nombre completo" required>
+      <!-- Campo de email -->
+      <input type="email" placeholder="Correo electrónico" required>
+      <!-- Lista desplegable -->
+      <select>
+        <option>Consulta</option>
+        <option>Reclamo</option>
+        <option>Sugerencia</option>
+      </select>
+      <!-- Área de texto -->
+      <textarea placeholder="Escribe tu mensaje aquí"></textarea>
+      <!-- Botón de envío -->
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Mapa insertado -->
+    <h2>Ubicación</h2>
+    <iframe width="100%" height="250" src="https://maps.google.com/maps?q=Arequipa&output=embed"></iframe>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2025 DecoHome Web Store</p>
+  </footer>
+</body>
+</html>

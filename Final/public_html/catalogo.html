@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo completo de productos DecoHome - Alfombras, cojines, vajillas y más">
+  <meta name="keywords" content="catálogo, productos, alfombras, cojines, decoración, hogar">
+  <title>DecoHome - Catálogo de Productos</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/utils.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/dom-manager.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui-handlers.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script></head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>DecoHome</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html" class="active">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="galeria.html">Galería</a>
+        <a href="politicas.html">Politica</a>
+        <a href="envios.html">Envios</a>
+        <a href="pago.html">Pago</a>
+        <a href="registro.html">Registro</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&h=400&fit=crop" alt="Catálogo DecoHome">
+    <div class="banner-overlay">
+      <h2>Nuestro Catálogo de Productos</h2>
+      <p>Encuentra todo lo que necesitas para tu hogar</p>
+    </div>
+  </div>
+
+  <!-- Contenido Principal -->
+  <div class="container">
+    <h2 class="text-center">Explora Nuestra Colección</h2>
+    <p class="text-center">
+      Descubre productos de alta calidad para cada espacio de tu hogar. 
+      Desde alfombras hasta accesorios de cocina, tenemos todo lo que necesitas.
+    </p>
+
+    <!-- Barra Lateral + Contenido con Flexbox -->
+    <div class="flex-container" style="align-items: flex-start;">
+      <!-- Sidebar con Categorías -->
+      <div class="sidebar">
+        <h3>🏷️ Categorías</h3>
+        <div class="sidebar-item">🧶 Alfombras</div>
+        <div class="sidebar-item">🛋️ Cojines</div>
+        <div class="sidebar-item">🍽️ Cocina</div>
+        <div class="sidebar-item">🪟 Cortinas</div>
+        <div class="sidebar-item">🖼️ Cuadros</div>
+        <div class="sidebar-item">🧵 Textiles</div>
+
+        <h3 style="margin-top: 2rem;">💰 Filtrar por Precio</h3>
+        <div class="sidebar-item">Menos de S/ 50</div>
+        <div class="sidebar-item">S/ 50 - S/ 100</div>
+        <div class="sidebar-item">S/ 100 - S/ 200</div>
+        <div class="sidebar-item">Más de S/ 200</div>
+
+        <h3 style="margin-top: 2rem;">⭐ Ordenar Por</h3>
+        <div class="sidebar-item">Más Vendidos</div>
+        <div class="sidebar-item">Menor Precio</div>
+        <div class="sidebar-item">Mayor Precio</div>
+        <div class="sidebar-item">Novedades</div>
+      </div>
+
+      <!-- Contenido Principal -->
+      <div style="flex: 3;">
+        <!-- Productos con Grid Layout -->
+        <h3>🧶 Alfombras</h3>
+        <div class="grid-container">
+          <div class="product-card">
+            <img src="https://www.dkohome.cl/web/image/product.template/49983/image_256/%5B230008960%5D%20Alfombra%2090cm%20yute%20black?unique=00aa4be" alt="Alfombra Boho" class="product-image">
+            <div class="product-info">
+              <h4 class="product-title">Alfombra Boho 90x120cm</h4>
+              <p>Material: Yute natural</p>
+              <p>Color: Negro/Natural</p>
+              <p class="product-price">S/ 89.99</p>
+              <a href="carrito.html" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=400&h=300&fit=crop" alt="Alfombra Moderna" class="product-image">
+            <div class="product-info">
+              <h4 class="product-title">Alfombra Moderna Geométrica</h4>
+              <p>Material: Poliéster suave</p>
+              <p>Color: Gris/Blanco</p>
+              <p class="product-price">S/ 129.99</p>
+              <a href="carrito.html" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=400&h=300&fit=crop" alt="Alfombra Persa" class="product-image">
+            <div class="product-info">
+              <h4 class="product-title">Alfombra Estilo Persa</h4>
+              <p>Material: Algodón tejido</p>
+              <p>Color: Multicolor</p>
+              <p class="product-price">S/ 159.99</p>
+              <a href="carrito.html" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cojines -->
+        <h3 style="margin-top: 3rem;">🛋️ Cojines Decorativos</h3>
+        <div class="grid-container">
+          <div class="product-card">
+            <img src="https://media.doitcenter.com.pa/media/catalog/product/4/0/4031337_4_c5nmt94t6hsk676k.jpg?quality=85&fit=bounds&height=&width=256" alt="Cojines Velvet" class="product-image">
+            <div class="product-info">
+              <h4 class="product-title">Pack 2 Cojines Velvet</h4>
+              <p>Material: Terciopelo premium</p>
+              <p>Tamaño: 45x45cm</p>
+              <p class="product-price">S/ 29.99</p>
+              <a href="carrito.html" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop" alt="Cojines Lino" class="product-image">
+            <div class="product-info">
+              <h4 class="product-title">Set 3 Cojines de Lino</h4>
+              <p>Material: Lino natural</p>
+              <p>Colores: Beige, Gris, Blanco</p>
+              <p class="product-price">S/ 39.99</p>
+              <a href="carrito.html" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop" alt="Cojines Estampados" class="product-image">
+            <div class="product-info">
+              <h4 class="product-title">Cojines Estampados Boho</h4>
+              <p>Material: Algodón con bordados</p>
+              <p>Diseño: Geométrico tribal</p>
+              <p class="product-price">S/ 34.99</p>
+              <a href="carrito.html" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cocina -->
+        <h3 style="margin-top: 3rem;">🍽️ Cocina y Comedor</h3>
+        <div class="grid-container">
+          <div class="product-card">
+            <img src="https://media.doitcenter.com.pa/media/catalog/product/2/0/206cp203123_2_r56m1fsm5vjphkdm.jpg?quality=85&fit=bounds&height=&width=256" alt="Vajilla" class="product-image">
+            <div class="product-info">
+              <h4 class="product-title">Set Vajilla 16 Piezas</h4>
+              <p>Material: Cerámica</p>
+              <p>Incluye: Platos, tazas, bowls</p>
+              <p class="product-price">S/ 59.99</p>
+              <a href="carrito.html" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=300&fit=crop" alt="Cubiertos" class="product-image">
+            <div class="product-info">
+              <h4 class="product-title">Set Cubiertos 24 Piezas</h4>
+              <p>Material: Acero inoxidable</p>
+              <p>Acabado: Dorado mate</p>
+              <p class="product-price">S/ 79.99</p>
+              <a href="carrito.html" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=400&h=300&fit=crop" alt="Copas" class="product-image">
+            <div class="product-info">
+              <h4 class="product-title">Set 6 Copas de Vino</h4>
+              <p>Material: Cristal premium</p>
+              <p>Capacidad: 350ml cada una</p>
+              <p class="product-price">S/ 49.99</p>
+              <a href="carrito.html" class="btn btn-primary">Agregar al Carrito</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabla Resumen de Productos -->
+        <h3 style="margin-top: 3rem;" class="text-center">📋 Lista Completa de Productos</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Imagen</th>
+              <th>Producto</th>
+              <th>Categoría</th>
+              <th>Material</th>
+              <th>Precio</th>
+              <th>Stock</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="https://www.dkohome.cl/web/image/product.template/49983/image_256/%5B230008960%5D%20Alfombra%2090cm%20yute%20black?unique=00aa4be" alt="Alfombra"></td>
+              <td>Alfombra Boho 90x120cm</td>
+              <td>Alfombras</td>
+              <td>Yute Natural</td>
+              <td class="product-price">S/ 89.99</td>
+              <td>✅ Disponible</td>
+            </tr>
+            <tr>
+              <td><img src="https://media.doitcenter.com.pa/media/catalog/product/4/0/4031337_4_c5nmt94t6hsk676k.jpg?quality=85&fit=bounds&height=&width=256" alt="Cojines"></td>
+              <td>Pack 2 Cojines Velvet</td>
+              <td>Cojines</td>
+              <td>Terciopelo</td>
+              <td class="product-price">S/ 29.99</td>
+              <td>✅ Disponible</td>
+            </tr>
+            <tr>
+              <td><img src="https://media.doitcenter.com.pa/media/catalog/product/2/0/206cp203123_2_r56m1fsm5vjphkdm.jpg?quality=85&fit=bounds&height=&width=256" alt="Vajilla"></td>
+              <td>Set Vajilla 16 Piezas</td>
+              <td>Cocina</td>
+              <td>Cerámica</td>
+              <td class="product-price">S/ 59.99</td>
+              <td>✅ Disponible</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=80&h=80&fit=crop" alt="Cortinas"></td>
+              <td>Cortinas Blackout 140x220cm</td>
+              <td>Cortinas</td>
+              <td>Poliéster</td>
+              <td class="product-price">S/ 119.99</td>
+              <td>✅ Disponible</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1513519245088-0e3ad4e6c1a6?w=80&h=80&fit=crop" alt="Cuadro"></td>
+              <td>Cuadro Abstract Art 60x80cm</td>
+              <td>Cuadros</td>
+              <td>Canvas</td>
+              <td class="product-price">S/ 89.99</td>
+              <td>✅ Disponible</td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=80&h=80&fit=crop" alt="Manta"></td>
+              <td>Manta Tejida Premium</td>
+              <td>Textiles</td>
+              <td>Algodón</td>
+              <td class="product-price">S/ 69.99</td>
+              <td>⚠️ Últimas unidades</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <h2>¿No Encuentras lo que Buscas?</h2>
+      <p>Contáctanos y te ayudamos a encontrar el producto perfecto</p>
+      <a href="contacto.html" class="btn btn-primary">Contactar</a>
+      <a href="servicios.html" class="btn btn-secondary">Ver Servicios</a>
+    </div>
+  </div>
+
+  <!-- Redes Sociales -->
+  <div class="container">
+    <h3 class="text-center">Síguenos en Redes Sociales</h3>
+    <div class="social-links">
+      <a href="https://facebook.com/decohome" target="_blank" class="social-btn facebook" title="Facebook">f</a>
+      <a href="https://twitter.com/decohome" target="_blank" class="social-btn twitter" title="Twitter">🐦</a>
+      <a href="https://instagram.com/decohome" target="_blank" class="social-btn instagram" title="Instagram">📷</a>
+      <a href="https://wa.me/51999999999" target="_blank" class="social-btn whatsapp" title="WhatsApp">💬</a>
+      <a href="https://youtube.com/decohome" target="_blank" class="social-btn youtube" title="YouTube">▶</a>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>DecoHome</h3>
+        <p>Tu hogar, tu estilo, nuestra pasión.</p>
+        <p>📍 Av. Principal 123, Arequipa</p>
+        <p>📞 +51 999 999 999</p>
+        <p>✉️ catalogo@decohome.pe</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#alfombras">Alfombras</a></li>
+          <li><a href="#cojines">Cojines</a></li>
+          <li><a href="#cocina">Cocina</a></li>
+          <li><a href="#cortinas">Cortinas</a></li>
+          <li><a href="#cuadros">Cuadros</a></li>
+          <li><a href="#textiles">Textiles</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Atención al Cliente</h3>
+        <p>Lun-Vie: 9:00 - 18:00</p>
+        <p>Sábados: 9:00 - 14:00</p>
+        <p>Domingos: Cerrado</p>
+        <p style="margin-top: 1rem;">💳 Aceptamos todos los métodos de pago</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 DecoHome - Christian Jesús Chambi Quispe | Catálogo de Productos</p>
+    </div>
+  </footer>
+</body>
+</html>

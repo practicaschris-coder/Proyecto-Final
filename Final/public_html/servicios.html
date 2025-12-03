@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicios de asesoría y diseño de interiores en DecoHome">
+  <meta name="keywords" content="diseño interiores, asesoría decoración, instalación">
+  <title>DecoHome - Servicios</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/utils.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/dom-manager.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui-handlers.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script></head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>DecoHome</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html" class="active">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="galeria.html">Galería</a>
+        <a href="politicas.html">Politica</a>
+        <a href="envios.html">Envios</a>
+        <a href="pago.html">Pago</a>
+        <a href="registro.html">Registro</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&h=400&fit=crop" alt="Servicios DecoHome">
+    <div class="banner-overlay">
+      <h2>Nuestros Servicios Profesionales</h2>
+    </div>
+  </div>
+
+  <!-- Contenido Principal -->
+  <div class="container">
+    <h2 class="text-center">Servicios que Transforman Espacios</h2>
+    <p class="text-center">
+      En DecoHome no solo vendemos productos, te acompañamos en todo el proceso de decoración 
+      con servicios profesionales personalizados.
+    </p>
+
+    <!-- Servicios Principales con Grid Layout -->
+    <div class="grid-container">
+      <!-- Servicio 1 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&h=300&fit=crop" alt="Asesoría" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">🎨 Asesoría de Decoración</h3>
+          <p>Consulta personalizada con nuestros expertos en diseño de interiores.</p>
+          <p class="product-price">S/ 150.00</p>
+          <a href="contacto.html" class="btn btn-primary">Solicitar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop" alt="Diseño" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">📐 Diseño de Interiores</h3>
+          <p>Proyecto completo de diseño 3D y planificación de espacios.</p>
+          <p class="product-price">S/ 500.00</p>
+          <a href="contacto.html" class="btn btn-primary">Solicitar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=400&h=300&fit=crop" alt="Instalación" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">🔧 Instalación Profesional</h3>
+          <p>Instalamos cortinas, alfombras, cuadros y más en tu hogar.</p>
+          <p class="product-price">S/ 80.00</p>
+          <a href="contacto.html" class="btn btn-primary">Solicitar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 4 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Home Staging" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">🏡 Home Staging</h3>
+          <p>Preparamos tu hogar para venta o alquiler con decoración estratégica.</p>
+          <p class="product-price">S/ 800.00</p>
+          <a href="contacto.html" class="btn btn-primary">Solicitar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 5 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=400&h=300&fit=crop" alt="Compras" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">🛒 Personal Shopper</h3>
+          <p>Te ayudamos a elegir los mejores productos según tu estilo.</p>
+          <p class="product-price">S/ 200.00</p>
+          <a href="contacto.html" class="btn btn-primary">Solicitar</a>
+        </div>
+      </div>
+
+      <!-- Servicio 6 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=400&h=300&fit=crop" alt="Visita" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">📍 Visita a Domicilio</h3>
+          <p>Nuestro equipo visita tu hogar para evaluar y proponer soluciones.</p>
+          <p class="product-price">S/ 100.00</p>
+          <a href="contacto.html" class="btn btn-primary">Solicitar</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proceso de Trabajo con Flexbox -->
+    <h2 class="text-center m-4">¿Cómo Trabajamos?</h2>
+    <div class="flex-container">
+      <div class="flex-item text-center">
+        <div class="social-btn facebook">1</div>
+        <h3>Consulta Inicial</h3>
+        <p>Conversamos contigo para entender tus necesidades y gustos.</p>
+      </div>
+
+      <div class="flex-item text-center">
+        <div class="social-btn instagram">2</div>
+        <h3>Propuesta</h3>
+        <p>Creamos una propuesta personalizada con opciones y presupuesto.</p>
+      </div>
+
+      <div class="flex-item text-center">
+        <div class="social-btn twitter">3</div>
+        <h3>Ejecución</h3>
+        <p>Implementamos el proyecto con seguimiento continuo.</p>
+      </div>
+
+      <div class="flex-item text-center">
+        <div class="social-btn whatsapp">4</div>
+        <h3>Entrega Final</h3>
+        <p>Tu espacio transformado y listo para disfrutar.</p>
+      </div>
+    </div>
+
+    <!-- Tabla de Comparación de Servicios -->
+    <h2 class="text-center m-4">Comparativa de Servicios</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Servicio</th>
+          <th>Duración</th>
+          <th>Incluye</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Asesoría Básica</td>
+          <td>1 hora</td>
+          <td>Consulta presencial o virtual</td>
+          <td>S/ 150.00</td>
+        </tr>
+        <tr>
+          <td>Diseño Completo</td>
+          <td>1-2 semanas</td>
+          <td>Renders 3D, planos, lista de compras</td>
+          <td>S/ 500.00</td>
+        </tr>
+        <tr>
+          <td>Instalación</td>
+          <td>2-4 horas</td>
+          <td>Mano de obra profesional</td>
+          <td>S/ 80.00</td>
+        </tr>
+        <tr>
+          <td>Home Staging</td>
+          <td>3-5 días</td>
+          <td>Decoración temporal completa</td>
+          <td>S/ 800.00</td>
+        </tr>
+        <tr>
+          <td>Personal Shopper</td>
+          <td>4 horas</td>
+          <td>Acompañamiento en compras</td>
+          <td>S/ 200.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Testimonios con Grid Areas -->
+    <h2 class="text-center m-4">Lo Que Dicen Nuestros Clientes</h2>
+    <div class="grid-areas">
+      <div class="grid-header">
+        <h3>⭐⭐⭐⭐⭐ Testimonios Verificados</h3>
+      </div>
+      <div class="grid-sidebar">
+        <h4>María L.</h4>
+        <p>"El servicio de diseño de interiores superó todas mis expectativas. Mi sala quedó hermosa."</p>
+      </div>
+      <div class="grid-main">
+        <h4>Carlos R.</h4>
+        <p>"Contraté la asesoría y me ayudaron a elegir todo perfecto. Muy profesionales y creativos."</p>
+        <br>
+        <h4>Ana M.</h4>
+        <p>"La instalación fue rápida y limpia. Los recomiendo 100%."</p>
+      </div>
+      <div class="grid-footer">
+        <p class="text-center">💬 Más de 500 clientes satisfechos nos respaldan</p>
+      </div>
+    </div>
+
+    <!-- Video Demo -->
+    <h2 class="text-center m-4">Conoce Nuestro Proceso</h2>
+    <div class="banner-container">
+      <video controls poster="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&h=400&fit=crop">
+        <source src="video-demo.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+      </video>
+    </div>
+
+    <!-- Formulario de Cotización -->
+    <h2 class="text-center m-4">Solicita una Cotización</h2>
+    <form>
+      <label>Nombre Completo *</label>
+      <input type="text" placeholder="Ingresa tu nombre" required>
+
+      <label>Correo Electrónico *</label>
+      <input type="email" placeholder="tu@email.com" required>
+
+      <label>Teléfono *</label>
+      <input type="tel" placeholder="+51 999 999 999" required>
+
+      <label>Servicio de Interés *</label>
+      <select required>
+        <option value="">Selecciona un servicio</option>
+        <option value="asesoria">Asesoría de Decoración</option>
+        <option value="diseño">Diseño de Interiores</option>
+        <option value="instalacion">Instalación Profesional</option>
+        <option value="staging">Home Staging</option>
+        <option value="shopper">Personal Shopper</option>
+        <option value="visita">Visita a Domicilio</option>
+      </select>
+
+      <label>¿Cuándo necesitas el servicio?</label>
+      <input type="date">
+
+      <label>Presupuesto Aproximado</label>
+      <select>
+        <option>Menos de S/ 300</option>
+        <option>S/ 300 - S/ 500</option>
+        <option>S/ 500 - S/ 1000</option>
+        <option>Más de S/ 1000</option>
+      </select>
+
+      <label>Describe tu proyecto</label>
+      <textarea placeholder="Cuéntanos qué tienes en mente..." rows="5"></textarea>
+
+      <button type="submit" class="btn-primary">Solicitar Cotización</button>
+    </form>
+
+    <!-- CTA Final -->
+    <div class="cta-section">
+      <h2>¿Tienes Dudas? Contáctanos</h2>
+      <p>Nuestro equipo está listo para ayudarte a transformar tu hogar</p>
+      <a href="contacto.html" class="btn btn-primary">Contactar Ahora</a>
+      <a href="https://wa.me/51999999999" class="btn btn-secondary" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Enlaces Externos Relevantes -->
+  <div class="container">
+    <h3 class="text-center">Enlaces de Interés</h3>
+    <div class="flex-container">
+      <div class="flex-item text-center">
+        <h4>📚 Recursos</h4>
+        <p><a href="https://www.houzz.com" target="_blank">Houzz - Inspiración</a></p>
+        <p><a href="https://www.pinterest.com/ideas/home-decor/" target="_blank">Pinterest Decoración</a></p>
+      </div>
+      <div class="flex-item text-center">
+        <h4>🎓 Aprende</h4>
+        <p><a href="https://www.youtube.com/results?search_query=dise%C3%B1o+interiores" target="_blank">Tutoriales YouTube</a></p>
+        <p><a href="https://www.domestika.org/es/courses/area/4-architecture-spaces" target="_blank">Cursos Domestika</a></p>
+      </div>
+      <div class="flex-item text-center">
+        <h4>🏪 Tiendas Aliadas</h4>
+        <p><a href="https://www.sodimac.com.pe" target="_blank">Sodimac Perú</a></p>
+        <p><a href="https://www.homy.pe" target="_blank">Homy Perú</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>DecoHome</h3>
+        <p>Tu hogar, tu estilo, nuestra pasión.</p>
+        <p>📍 Av. Principal 123, Arequipa</p>
+        <p>📞 +51 999 999 999</p>
+        <p>✉️ servicios@decohome.pe</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Servicios</h3>
+        <ul>
+          <li><a href="#asesoria">Asesoría</a></li>
+          <li><a href="#diseño">Diseño de Interiores</a></li>
+          <li><a href="#instalacion">Instalación</a></li>
+          <li><a href="#staging">Home Staging</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Horarios</h3>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
+        <p>Sábados: 9:00 - 14:00</p>
+        <p>Domingos: Cerrado</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" class="social-btn facebook">f</a>
+          <a href="https://instagram.com" target="_blank" class="social-btn instagram">📷</a>
+          <a href="https://wa.me/51999999999" target="_blank" class="social-btn whatsapp">💬</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 DecoHome - Christian Jesús Chambi Quispe | Todos los derechos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>

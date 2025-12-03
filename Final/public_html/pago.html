@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Métodos de pago disponibles en DecoHome">
+  <meta name="keywords" content="pagos, tarjetas, yape, plin, transferencias">
+  <title>DecoHome - Métodos de Pago</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/utils.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/dom-manager.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui-handlers.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script></head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>DecoHome</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="galeria.html">Galería</a>
+        <a href="politicas.html">Politica</a>
+        <a href="envios.html">Envios</a>
+        <a href="pago.html" class="active">Pago</a>
+        <a href="registro.html">Registro</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=400&fit=crop" alt="Métodos de Pago DecoHome">
+    <div class="banner-overlay">
+      <h2>💳 Métodos de Pago</h2>
+      <p>Paga de forma segura y conveniente</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="text-center">Formas de Pago Aceptadas</h2>
+    <p class="text-center">En DecoHome aceptamos múltiples métodos de pago para tu comodidad y seguridad.</p>
+
+    <section class="section">
+      <h2>💳 Tarjetas de Crédito y Débito</h2>
+      <div class="grid-container">
+        <div class="product-card">
+          <div class="product-info">
+            <h3 class="product-title">🔵 Visa</h3>
+            <p>Crédito y Débito</p>
+            <p>✓ Pago en cuotas disponible</p>
+            <p>✓ Sin intereses hasta 3 cuotas</p>
+            <p>✓ Con intereses hasta 12 cuotas</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-info">
+            <h3 class="product-title">🔴 Mastercard</h3>
+            <p>Crédito y Débito</p>
+            <p>✓ Pago en cuotas disponible</p>
+            <p>✓ Sin intereses hasta 3 cuotas</p>
+            <p>✓ Con intereses hasta 12 cuotas</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-info">
+            <h3 class="product-title">🔷 American Express</h3>
+            <p>Solo Crédito</p>
+            <p>✓ Pago en cuotas disponible</p>
+            <p>✓ Sin intereses hasta 3 cuotas</p>
+            <p>✓ Con intereses hasta 6 cuotas</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-info">
+            <h3 class="product-title">🟠 Diners Club</h3>
+            <p>Solo Crédito</p>
+            <p>✓ Pago en cuotas disponible</p>
+            <p>✓ Sin intereses hasta 3 cuotas</p>
+            <p>✓ Con intereses hasta 10 cuotas</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Cuotas sin Intereses:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Monto de Compra</th>
+            <th>Cuotas sin Interés</th>
+            <th>Tarjetas Aplicables</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S/ 100 - S/ 299</td>
+            <td>Hasta 3 cuotas</td>
+            <td>Visa, Mastercard</td>
+          </tr>
+          <tr>
+            <td>S/ 300 - S/ 599</td>
+            <td>Hasta 6 cuotas</td>
+            <td>Visa, Mastercard, Amex</td>
+          </tr>
+          <tr>
+            <td>S/ 600 - S/ 999</td>
+            <td>Hasta 9 cuotas</td>
+            <td>Visa, Mastercard</td>
+          </tr>
+          <tr>
+            <td>S/ 1000 a más</td>
+            <td>Hasta 12 cuotas</td>
+            <td>Todas las tarjetas</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>📱 Billeteras Digitales</h2>
+      <div class="flex-container">
+        <div class="flex-item text-center">
+          <div class="social-btn whatsapp" style="font-size: 3rem;">💰</div>
+          <h3>Yape</h3>
+          <p>Pago instantáneo desde tu app del BCP</p>
+          <p><strong>Código Yape:</strong> 999 999 999</p>
+          <p class="product-price">Sin comisión</p>
+        </div>
+        <div class="flex-item text-center">
+          <div class="social-btn instagram" style="font-size: 3rem;">💸</div>
+          <h3>Plin</h3>
+          <p>Transfiere desde cualquier banco</p>
+          <p><strong>Código Plin:</strong> 999 999 999</p>
+          <p class="product-price">Sin comisión</p>
+        </div>
+        <div class="flex-item text-center">
+          <div class="social-btn facebook" style="font-size: 3rem;">📲</div>
+          <h3>BIM</h3>
+          <p>Pago rápido con tu celular</p>
+          <p><strong>Código BIM:</strong> 999 999 999</p>
+          <p class="product-price">Sin comisión</p>
+        </div>
+      </div>
+
+      <div class="message info">
+        <strong>⚠️ Importante:</strong> Para pagos con billeteras digitales, envía tu comprobante al WhatsApp +51 999 999 999 para confirmar tu pedido.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🏦 Transferencias Bancarias</h2>
+      <p>Realiza tu pago mediante transferencia o depósito a nuestras cuentas bancarias:</p>
+      
+      <div class="grid-container">
+        <div class="product-card">
+          <div class="product-info">
+            <h3>Banco de Crédito del Perú (BCP)</h3>
+            <p><strong>Cuenta Corriente Soles:</strong></p>
+            <p>191-2345678-0-90</p>
+            <p><strong>CCI:</strong> 00219100234567809012</p>
+            <p><strong>Titular:</strong> DecoHome S.A.C.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-info">
+            <h3>Interbank</h3>
+            <p><strong>Cuenta Corriente Soles:</strong></p>
+            <p>200-3001234567</p>
+            <p><strong>CCI:</strong> 00320030012345678901</p>
+            <p><strong>Titular:</strong> DecoHome S.A.C.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-info">
+            <h3>BBVA</h3>
+            <p><strong>Cuenta Corriente Soles:</strong></p>
+            <p>0011-0123-4567890123</p>
+            <p><strong>CCI:</strong> 01101230456789012345</p>
+            <p><strong>Titular:</strong> DecoHome S.A.C.</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-info">
+            <h3>Scotiabank</h3>
+            <p><strong>Cuenta Corriente Soles:</strong></p>
+            <p>000-1234567</p>
+            <p><strong>CCI:</strong> 00900010012345678901</p>
+            <p><strong>Titular:</strong> DecoHome S.A.C.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Pasos para Pagar por Transferencia:</h3>
+      <div class="flex-container">
+        <div class="flex-item">
+          <strong>1. Realiza tu pedido</strong>
+          <p>Completa tu compra en el carrito y selecciona "Transferencia Bancaria"</p>
+        </div>
+        <div class="flex-item">
+          <strong>2. Transfiere el monto</strong>
+          <p>Realiza la transferencia al banco de tu preferencia</p>
+        </div>
+        <div class="flex-item">
+          <strong>3. Envía tu comprobante</strong>
+          <p>Envía foto del voucher al WhatsApp +51 999 999 999</p>
+        </div>
+        <div class="flex-item">
+          <strong>4. Confirmación</strong>
+          <p>Recibirás confirmación en 1-2 horas hábiles</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>💵 Pago Contra Entrega</h2>
+      <p>Paga en efectivo al momento de recibir tu pedido.</p>
+      
+      <h3>Requisitos:</h3>
+      <ul>
+        <li>✓ Disponible solo en Arequipa Metropolitana</li>
+        <li>✓ Pedidos mayores a S/ 50</li>
+        <li>✓ Tener el monto exacto (nuestros repartidores llevan vuelto limitado)</li>
+        <li>✓ Cargo adicional de S/ 5 por servicio</li>
+      </ul>
+
+      <div class="message info">
+        <strong>📝 Nota:</strong> Por seguridad, nuestros repartidores solo aceptan efectivo hasta S/ 500. Para montos mayores, usa otro método de pago.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🔒 Seguridad en tus Pagos</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h4>🛡️ Certificado SSL</h4>
+          <p>Toda la información está encriptada con tecnología SSL de 256 bits</p>
+        </div>
+        <div class="grid-item">
+          <h4>🔐 PCI DSS Compliant</h4>
+          <p>Cumplimos con los estándares internacionales de seguridad de pagos</p>
+        </div>
+        <div class="grid-item">
+          <h4>🏦 Pasarela Segura</h4>
+          <p>Procesamos pagos a través de Niubiz (Visa) y Culqi</p>
+        </div>
+        <div class="grid-item">
+          <h4>👁️ Monitoreo 24/7</h4>
+          <p>Supervisamos todas las transacciones para prevenir fraudes</p>
+        </div>
+      </div>
+
+      <h3>Protección al Comprador:</h3>
+      <ul>
+        <li>🔹 No guardamos información completa de tarjetas</li>
+        <li>🔹 Verificación en dos pasos disponible</li>
+        <li>🔹 Alertas de transacciones por email</li>
+        <li>🔹 Política de devolución de dinero</li>
+        <li>🔹 Soporte inmediato ante problemas de pago</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>❓ Preguntas Frecuentes sobre Pagos</h2>
+      
+      <h3>¿Es seguro pagar con tarjeta en línea?</h3>
+      <p>Sí, completamente seguro. Utilizamos encriptación SSL y no almacenamos información completa de tarjetas. Todos los pagos son procesados por pasarelas certificadas.</p>
+      
+      <h3>¿Puedo pagar en cuotas?</h3>
+      <p>Sí, aceptamos pagos en cuotas con tarjetas de crédito. Las cuotas sin intereses dependen del monto de compra (hasta 12 cuotas para compras mayores a S/ 1000).</p>
+      
+      <h3>¿Cuánto demora en reflejarse mi pago?</h3>
+      <p>Los pagos con tarjeta son inmediatos. Las transferencias bancarias se confirman en 1-2 horas hábiles una vez enviado el comprobante.</p>
+      
+      <h3>¿Puedo cambiar el método de pago después de hacer el pedido?</h3>
+      <p>Sí, siempre que tu pedido no haya sido despachado. Contáctanos al WhatsApp +51 999 999 999.</p>
+      
+      <h3>¿Qué hago si mi pago fue rechazado?</h3>
+      <p>Verifica que tu tarjeta tenga fondos suficientes y esté habilitada para compras en línea. Si el problema persiste, contacta a tu banco o intenta con otro método de pago.</p>
+      
+      <h3>¿Emiten factura?</h3>
+      <p>Sí, emitimos boletas y facturas electrónicas. Debes solicitarlo al momento de realizar el pedido.</p>
+      
+      <h3>¿Hacen devoluciones de dinero?</h3>
+      <p>Sí, según nuestra política de devoluciones. El reembolso se procesa al mismo método de pago usado en la compra dentro de 7-10 días hábiles.</p>
+    </section>
+
+    <section class="section">
+      <h2>📞 Soporte de Pagos</h2>
+      <p>Si tienes problemas con tu pago o necesitas asistencia, contáctanos:</p>
+      
+      <div class="flex-container">
+        <div class="flex-item text-center">
+          <h4>📞 Teléfono</h4>
+          <p><strong>+51 999 999 999</strong></p>
+          <p>Lun-Vie: 9:00 AM - 6:00 PM</p>
+        </div>
+        <div class="flex-item text-center">
+          <h4>💬 WhatsApp</h4>
+          <p><strong>+51 999 999 999</strong></p>
+          <p>Respuesta en minutos</p>
+        </div>
+        <div class="flex-item text-center">
+          <h4>✉️ Email</h4>
+          <p><strong>pagos@decohome.pe</strong></p>
+          <p>Respuesta en 24 horas</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-section">
+      <h2>¿Listo para Realizar tu Compra?</h2>
+      <p>Elige tu método de pago favorito y completa tu pedido de forma segura</p>
+      <a href="catalogo.html" class="btn btn-primary">Ver Catálogo</a>
+      <a href="carrito.html" class="btn btn-secondary">Ir al Carrito</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>DecoHome</h3>
+        <p>Tu hogar, tu estilo, nuestra pasión.</p>
+        <p>📍 Av. Principal 123, Arequipa</p>
+        <p>📞 +51 999 999 999</p>
+        <p>✉️ pagos@decohome.pe</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Información de Pago</h3>
+        <ul>
+          <li><a href="pago.html#tarjetas">Tarjetas de Crédito</a></li>
+          <li><a href="pago.html#billeteras">Billeteras Digitales</a></li>
+          <li><a href="pago.html#transferencias">Transferencias</a></li>
+          <li><a href="pago.html#contraentrega">Pago Contra Entrega</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Seguridad</h3>
+        <p>🔒 Pagos 100% Seguros</p>
+        <p>🛡️ Certificado SSL</p>
+        <p>💳 PCI DSS Compliant</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Horario de Atención</h3>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
+        <p>Sábados: 9:00 - 14:00</p>
+        <p>Domingos: Cerrado</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 DecoHome - Christian Jesús Chambi Quispe | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

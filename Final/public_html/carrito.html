@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecoHome - Carrito</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/utils.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/dom-manager.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui-handlers.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script></head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>DecoHome</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html" class="active">Carrito</a>
+        <a href="galeria.html">Galería</a>
+        <a href="politicas.html">Politica</a>
+        <a href="envios.html">Envios</a>
+        <a href="pago.html">Pago</a>
+        <a href="registro.html">Registro</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container" id="container">
+    <h2>Sistema de Carrito de Compras</h2>
+
+    <div class="section">
+      <h3>1. Configuración Inicial del Carrito</h3>
+      <div class="input-group">
+        <label for="capacidad">Capacidad Máxima del Carrito:</label>
+        <input type="number" id="capacidad" placeholder="Ingrese capacidad" min="1" value="10">
+      </div>
+      <button onclick="inicializarCarrito()">Crear Carrito</button>
+      <div id="mensaje-init" class="hidden"></div>
+    </div>
+
+    <div class="section">
+      <h3>2. Menú de Opciones del Carrito</h3>
+      <div class="menu">
+        <button onclick="mostrarFormularioAgregar()" id="btn-agregar" disabled>Agregar Producto</button>
+        <button onclick="mostrarFormularioBuscar()" id="btn-buscar" disabled>Buscar Producto</button>
+        <button onclick="mostrarCarritoOriginal()" id="btn-mostrar-original" disabled>Ver Carrito</button>
+        <button onclick="ordenarCarrito()" id="btn-ordenar" disabled>Ordenar por Precio</button>
+        <button onclick="mostrarCarritoOrdenado()" id="btn-mostrar-ordenado" disabled>Ver Ordenado</button>
+        <button onclick="mostrarFormularioEliminar()" id="btn-eliminar" disabled>Eliminar Producto</button>
+      </div>
+    </div>
+
+    <div id="form-agregar" class="section hidden">
+      <h3>Agregar Producto al Carrito</h3>
+      <div class="input-group">
+        <label for="producto-nombre">Nombre del Producto:</label>
+        <input type="text" id="producto-nombre" placeholder="Ej: Alfombra Boho">
+      </div>
+      <div class="input-group">
+        <label for="producto-precio">Precio (S/):</label>
+        <input type="number" id="producto-precio" placeholder="0.00" min="0" step="0.01">
+      </div>
+      <div class="input-group">
+        <label for="producto-cantidad">Cantidad:</label>
+        <input type="number" id="producto-cantidad" placeholder="1" min="1" value="1">
+      </div>
+      <button onclick="agregarProducto()">Agregar al Carrito</button>
+      <div id="mensaje-agregar" class="hidden"></div>
+    </div>
+
+    <div id="form-buscar" class="section hidden">
+      <h3>Buscar Producto en el Carrito</h3>
+      <div class="input-group">
+        <label for="producto-buscar">Nombre del Producto:</label>
+        <input type="text" id="producto-buscar" placeholder="Ingrese el nombre">
+      </div>
+      <button onclick="buscarProducto()">Buscar</button>
+      <div id="resultado-buscar" class="hidden"></div>
+    </div>
+
+    <div id="form-eliminar" class="section hidden">
+      <h3>Eliminar Producto del Carrito</h3>
+      <div class="input-group">
+        <label for="producto-eliminar">Nombre del Producto:</label>
+        <input type="text" id="producto-eliminar" placeholder="Ingrese el nombre">
+      </div>
+      <button onclick="eliminarProducto()">Eliminar</button>
+      <div id="mensaje-eliminar" class="hidden"></div>
+    </div>
+
+    <div id="display-original" class="section hidden">
+      <h3>Carrito de Compras (Original)</h3>
+      <div id="tabla-original"></div>
+      <div id="info-original"></div>
+    </div>
+
+    <div id="display-ordenado" class="section hidden">
+      <h3>Carrito Ordenado por Precio (Método Burbuja)</h3>
+      <div id="tabla-ordenado"></div>
+      <div id="info-ordenado"></div>
+      <div id="proceso-burbuja" class="hidden"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 DecoHome Web Store</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/dom-manager.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui-handlers.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script></body>
+</html>

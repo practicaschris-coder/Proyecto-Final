@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DecoHome - Tu tienda online de decoración del hogar en Arequipa. Alfombras, cojines, vajillas y más.">
+  <meta name="keywords" content="decoración hogar, alfombras, cojines, vajillas, cortinas, cuadros, Arequipa">
+  <meta name="author" content="Christian Jesús Chambi Quispe">
+  <title>DecoHome - Decoración del Hogar | Inicio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/utils.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/dom-manager.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui-handlers.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script></head>
+<body>
+  <!-- Encabezado con Logo y Navegación -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>DecoHome</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">☰</button>
+      <nav id="mainNav">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="galeria.html">Galería</a>
+        <a href="politicas.html">Politica</a>
+        <a href="envios.html">Envios</a>
+        <a href="pago.html">Pago</a>
+        <a href="registro.html">Registro</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner Principal -->
+  <div class="banner">
+    <img src="https://images.sodimac.com/v3/assets/blt2f8082df109cfbfb/blt5fb80332950a057a/68b742891b488d1dadbff72c/Banner_N1_Terraza.jpg" alt="Banner Principal DecoHome">
+    <div class="banner-overlay">
+      <h2 class="welcome-text">Bienvenido a DecoHome</h2>
+      <p>Transformamos espacios, creamos hogares</p>
+    </div>
+  </div>
+
+  <!-- Contenido Principal con Flexbox -->
+  <div class="container">
+    <h2 class="text-center">Tu Tienda de Decoración del Hogar</h2>
+    <p class="text-center">
+      En DecoHome encontrarás todo lo que necesitas para transformar tu hogar en un espacio único y acogedor. 
+      Ofrecemos productos de alta calidad: alfombras, cojines, vajillas, cortinas, cuadros y mucho más.
+    </p>
+
+    <!-- Categorías con Grid Layout -->
+    <h3 class="text-center m-4">🏷️ Nuestras Categorías</h3>
+    <div class="grid-container">
+      <div class="product-card">
+        <img src="https://www.dkohome.cl/web/image/product.template/49983/image_256/%5B230008960%5D%20Alfombra%2090cm%20yute%20black?unique=00aa4be" alt="Alfombras" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Alfombras</h3>
+          <p>Diseños únicos para cada espacio</p>
+          <a href="catalogo.html#alfombras" class="btn btn-primary">Ver Más</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://media.doitcenter.com.pa/media/catalog/product/4/0/4031337_4_c5nmt94t6hsk676k.jpg?quality=85&fit=bounds&height=&width=256" alt="Cojines" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Cojines</h3>
+          <p>Comodidad y estilo para tu sofá</p>
+          <a href="catalogo.html#cojines" class="btn btn-primary">Ver Más</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://media.doitcenter.com.pa/media/catalog/product/2/0/206cp203123_2_r56m1fsm5vjphkdm.jpg?quality=85&fit=bounds&height=&width=256" alt="Vajilla" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Cocina</h3>
+          <p>Vajillas y accesorios prácticos</p>
+          <a href="catalogo.html#cocina" class="btn btn-primary">Ver Más</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=400&h=300&fit=crop" alt="Cortinas" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Cortinas</h3>
+          <p>Control de luz y privacidad</p>
+          <a href="catalogo.html#cortinas" class="btn btn-primary">Ver Más</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1513519245088-0e3ad4e6c1a6?w=400&h=300&fit=crop" alt="Cuadros" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Cuadros</h3>
+          <p>Arte para tus paredes</p>
+          <a href="catalogo.html#cuadros" class="btn btn-primary">Ver Más</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop" alt="Textiles" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Textiles</h3>
+          <p>Mantas, sábanas y más</p>
+          <a href="catalogo.html#textiles" class="btn btn-primary">Ver Más</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Productos Destacados con Flexbox -->
+    <h3 class="text-center m-4">⭐ Productos Destacados</h3>
+    <div class="flex-container">
+      <div class="flex-item text-center">
+        <img src="https://media.falabella.com/sodimacPE/351790X_01/w=800,h=800,fit=pad" alt="Producto Destacado 1" style="border-radius: 12px;">
+        <h4>Alfombra Premium Boho</h4>
+        <p class="product-price">S/ 89.99</p>
+        <a href="catalogo.html" class="btn btn-secondary">Comprar</a>
+      </div>
+
+      <div class="flex-item text-center">
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop" alt="Producto Destacado 2" style="border-radius: 12px;">
+        <h4>Set Cojines Velvet</h4>
+        <p class="product-price">S/ 29.99</p>
+        <a href="catalogo.html" class="btn btn-secondary">Comprar</a>
+      </div>
+
+      <div class="flex-item text-center">
+        <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop" alt="Producto Destacado 3" style="border-radius: 12px;">
+        <h4>Vajilla Moderna 16pz</h4>
+        <p class="product-price">S/ 59.99</p>
+        <a href="catalogo.html" class="btn btn-secondary">Comprar</a>
+      </div>
+    </div>
+
+    <!-- Video Promocional -->
+    <h3 class="text-center m-4">📹 Conoce Más Sobre Nosotros</h3>
+    <div class="banner-container">
+      <video controls poster="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?w=800&h=400&fit=crop">
+        <source src="video-intro.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video HTML5.
+      </video>
+    </div>
+
+    <!-- Beneficios con Grid Areas -->
+    <h3 class="text-center m-4">✨ ¿Por Qué Elegir DecoHome?</h3>
+    <div class="grid-areas">
+      <div class="grid-header">
+        <h3 class="text-center">Nuestras Ventajas</h3>
+      </div>
+      <div class="grid-sidebar">
+        <h4>🚚 Envío Gratis</h4>
+        <p>En compras mayores a S/ 150 en todo Arequipa</p>
+      </div>
+      <div class="grid-main">
+        <h4>💳 Pago Seguro</h4>
+        <p>Múltiples métodos de pago: tarjetas, Yape, Plin y más.</p>
+        <br>
+        <h4>↩️ Devoluciones</h4>
+        <p>30 días para cambios y devoluciones sin preguntas.</p>
+      </div>
+      <div class="grid-footer">
+        <p class="text-center">⭐ Más de 5000 clientes satisfechos nos respaldan</p>
+      </div>
+    </div>
+
+    <!-- Marquee con promociones -->
+    <div style="background: linear-gradient(135deg, #e67e22, #f39c12); color: white; padding: 1rem; border-radius: 12px; margin: 2rem 0; overflow: hidden;">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        🎉 OFERTA ESPECIAL: 20% de descuento en alfombras • 
+        ✨ Envío GRATIS en compras mayores a S/ 150 • 
+        🎁 Regalo sorpresa en tu primera compra • 
+        📞 Atención personalizada: +51 999 999 999
+      </marquee>
+    </div>
+
+    <!-- Testimonios -->
+    <h3 class="text-center m-4">💬 Lo Que Dicen Nuestros Clientes</h3>
+    <div class="flex-container">
+      <div class="flex-item">
+        <div class="flex-center">
+          <div class="social-btn instagram">👤</div>
+        </div>
+        <h4 class="text-center">María González</h4>
+        <p class="text-center">⭐⭐⭐⭐⭐</p>
+        <p class="text-center">"Excelente calidad y atención. Mi sala quedó hermosa con los productos de DecoHome."</p>
+      </div>
+
+      <div class="flex-item">
+        <div class="flex-center">
+          <div class="social-btn facebook">👤</div>
+        </div>
+        <h4 class="text-center">Carlos Ramírez</h4>
+        <p class="text-center">⭐⭐⭐⭐⭐</p>
+        <p class="text-center">"Rápido envío y productos tal como se muestran. 100% recomendado."</p>
+      </div>
+
+      <div class="flex-item">
+        <div class="flex-center">
+          <div class="social-btn twitter">👤</div>
+        </div>
+        <h4 class="text-center">Ana Martínez</h4>
+        <p class="text-center">⭐⭐⭐⭐⭐</p>
+        <p class="text-center">"Los cojines son de excelente calidad y los precios muy accesibles."</p>
+      </div>
+    </div>
+
+    <!-- CTA Principal -->
+    <div class="cta-section">
+      <h2>¿Listo para Transformar tu Hogar?</h2>
+      <p>Explora nuestro catálogo completo y descubre productos únicos para cada espacio</p>
+      <a href="catalogo.html" class="btn btn-primary">Ver Catálogo Completo</a>
+      <a href="servicios.html" class="btn btn-secondary">Servicios de Diseño</a>
+    </div>
+
+    <!-- Tabla de Envíos -->
+    <h3 class="text-center m-4">🚚 Información de Envíos</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Zona</th>
+          <th>Tiempo de Entrega</th>
+          <th>Costo de Envío</th>
+          <th>Condiciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Centro de Arequipa</td>
+          <td>24-48 horas</td>
+          <td>S/ 10.00</td>
+          <td>Gratis sobre S/ 150</td>
+        </tr>
+        <tr>
+          <td>Distritos Cercanos</td>
+          <td>2-3 días</td>
+          <td>S/ 15.00</td>
+          <td>Gratis sobre S/ 200</td>
+        </tr>
+        <tr>
+          <td>Provincias de Arequipa</td>
+          <td>3-5 días</td>
+          <td>S/ 25.00</td>
+          <td>Gratis sobre S/ 300</td>
+        </tr>
+        <tr>
+          <td>Otras Regiones</td>
+          <td>5-7 días</td>
+          <td>S/ 35.00</td>
+          <td>Consultar condiciones</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Frame con mapa de ubicación -->
+    <h3 class="text-center m-4">📍 Encuéntranos</h3>
+    <iframe width="100%" height="350" src="https://maps.google.com/maps?q=Arequipa,Peru&output=embed" frameborder="0" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></iframe>
+
+    <!-- Newsletter con Formulario -->
+    <h3 class="text-center m-4">📧 Suscríbete a Nuestro Newsletter</h3>
+    <form style="max-width: 600px; margin: 0 auto;">
+      <p class="text-center">Recibe ofertas exclusivas, tips de decoración y novedades</p>
+      
+      <div class="flex-container" style="gap: 1rem;">
+        <input type="email" placeholder="tu@email.com" required style="flex: 1;">
+        <button type="submit" class="btn-primary">Suscribirse</button>
+      </div>
+      
+      <label style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">
+        <input type="checkbox" required>
+        <span style="font-size: 0.9rem;">Acepto recibir comunicaciones de DecoHome</span>
+      </label>
+    </form>
+  </div>
+
+  <!-- Barra Lateral con Contenido Destacado (usando Flexbox) -->
+  <div class="container">
+    <div class="flex-container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h3>🔥 Lo Más Vendido</h3>
+        <div class="sidebar-item">
+          <p><strong>1.</strong> Alfombra Boho 90x120cm</p>
+        </div>
+        <div class="sidebar-item">
+          <p><strong>2.</strong> Pack 3 Cojines Velvet</p>
+        </div>
+        <div class="sidebar-item">
+          <p><strong>3.</strong> Set Vajilla Moderna</p>
+        </div>
+        <div class="sidebar-item">
+          <p><strong>4.</strong> Cortinas Blackout</p>
+        </div>
+        <div class="sidebar-item">
+          <p><strong>5.</strong> Cuadro Abstract Art</p>
+        </div>
+
+        <h3 style="margin-top: 2rem;">💰 Ofertas Flash</h3>
+        <div class="sidebar-item">
+          <p>⚡ 30% OFF en Cojines</p>
+          <p style="font-size: 0.85rem;">Válido hasta agotar stock</p>
+        </div>
+        <div class="sidebar-item">
+          <p>⚡ 2x1 en Cuadros</p>
+          <p style="font-size: 0.85rem;">Solo por hoy</p>
+        </div>
+      </div>
+
+      <!-- Contenido Principal -->
+      <div style="flex: 2;">
+        <h3>📰 Últimas Noticias del Blog</h3>
+        <div class="flex-column">
+          <div class="grid-item">
+            <h4>5 Tendencias en Decoración 2025</h4>
+            <p>Descubre los estilos que marcarán la pauta este año en diseño de interiores.</p>
+            <a href="blog.html">Leer más →</a>
+          </div>
+          
+          <div class="grid-item">
+            <h4>Cómo Elegir la Alfombra Perfecta</h4>
+            <p>Guía completa para seleccionar el tamaño, color y material ideal para tu espacio.</p>
+            <a href="blog.html">Leer más →</a>
+          </div>
+          
+          <div class="grid-item">
+            <h4>Ideas de Decoración para Espacios Pequeños</h4>
+            <p>Maximiza tu espacio con estas prácticas soluciones de diseño.</p>
+            <a href="blog.html">Leer más →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redes Sociales -->
+  <div class="container">
+    <h3 class="text-center">🌐 Síguenos en Redes Sociales</h3>
+    <p class="text-center">Únete a nuestra comunidad y mantente al día con las últimas tendencias</p>
+    <div class="social-links">
+      <a href="https://facebook.com/decohome" target="_blank" class="social-btn facebook" title="Facebook">f</a>
+      <a href="https://twitter.com/decohome" target="_blank" class="social-btn twitter" title="Twitter">🐦</a>
+      <a href="https://instagram.com/decohome" target="_blank" class="social-btn instagram" title="Instagram">📷</a>
+      <a href="https://wa.me/51999999999" target="_blank" class="social-btn whatsapp" title="WhatsApp">💬</a>
+      <a href="https://youtube.com/decohome" target="_blank" class="social-btn youtube" title="YouTube">▶</a>
+    </div>
+  </div>
+
+  <!-- Enlaces Externos Importantes -->
+  <div class="container">
+    <h3 class="text-center">🔗 Enlaces de Interés</h3>
+    <div class="flex-container">
+      <div class="flex-item text-center">
+        <h4>🛍️ Marketplaces</h4>
+        <p><a href="https://www.mercadolibre.com.pe" target="_blank">MercadoLibre Perú</a></p>
+        <p><a href="https://www.falabella.com.pe" target="_blank">Falabella</a></p>
+      </div>
+      
+      <div class="flex-item text-center">
+        <h4>🏠 Inspiración</h4>
+        <p><a href="https://www.pinterest.com/ideas/home-decor/" target="_blank">Pinterest Decoración</a></p>
+        <p><a href="https://www.houzz.com" target="_blank">Houzz</a></p>
+      </div>
+      
+      <div class="flex-item text-center">
+        <h4>📦 Proveedores</h4>
+        <p><a href="https://www.sodimac.com.pe" target="_blank">Sodimac Perú</a></p>
+        <p><a href="https://www.homy.pe" target="_blank">Homy</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-container">
+      <!-- Columna 1: Información de la empresa -->
+      <div class="footer-section">
+        <h3>🏠 DecoHome</h3>
+        <p>Tu hogar, tu estilo, nuestra pasión.</p>
+        <p><strong>Dirección:</strong><br>Av. Principal 123, Cercado<br>Arequipa, Perú</p>
+        <p><strong>Teléfono:</strong><br>+51 999 999 999</p>
+        <p><strong>Email:</strong><br>info@decohome.pe</p>
+        <p><strong>Horario:</strong><br>Lun-Vie: 9:00-18:00<br>Sáb: 9:00-14:00</p>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Categorías -->
+      <div class="footer-section">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="catalogo.html#alfombras">🧶 Alfombras</a></li>
+          <li><a href="catalogo.html#cojines">🛋️ Cojines</a></li>
+          <li><a href="catalogo.html#cocina">🍽️ Cocina</a></li>
+          <li><a href="catalogo.html#cortinas">🪟 Cortinas</a></li>
+          <li><a href="catalogo.html#cuadros">🖼️ Cuadros</a></li>
+          <li><a href="catalogo.html#textiles">🧵 Textiles</a></li>
+          <li><a href="catalogo.html#muebles">🪑 Muebles</a></li>
+          <li><a href="catalogo.html#iluminacion">💡 Iluminación</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Legal y soporte -->
+      <div class="footer-section">
+        <h3>Información Legal</h3>
+        <ul>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+          <li><a href="#">Política de Devoluciones</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Libro de Reclamaciones</a></li>
+          <li><a href="#">Trabaja con Nosotros</a></li>
+          <li><a href="#">Proveedores</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Barra inferior del footer -->
+    <div class="footer-bottom">
+      <p>© 2025 DecoHome Web Store | Desarrollado por Christian Jesús Chambi Quispe</p>
+      <p>RUC: 20123456789 | Todos los derechos reservados</p>
+      <div class="social-links" style="justify-content: center; margin-top: 1rem;">
+        <a href="https://facebook.com" target="_blank" class="social-btn facebook">f</a>
+        <a href="https://instagram.com" target="_blank" class="social-btn instagram">📷</a>
+        <a href="https://wa.me/51999999999" target="_blank" class="social-btn whatsapp">💬</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

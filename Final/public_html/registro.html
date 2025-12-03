@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crear cuenta o iniciar sesión en DecoHome">
+  <meta name="keywords" content="registro, login, crear cuenta, iniciar sesión">
+  <title>DecoHome - Crear Cuenta</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/utils.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/dom-manager.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui-handlers.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/Sesion.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>DecoHome</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="galeria.html">Galería</a>
+        <a href="politicas.html">Politica</a>
+        <a href="envios.html">Envios</a>
+        <a href="pago.html">Pago</a>
+        <a href="registro.html" class="active">Registro</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container" style="max-width: 600px;">
+    <h2 class="text-center">Bienvenido a DecoHome</h2>
+    <p class="text-center">Inicia sesión o crea una cuenta para disfrutar de todos los beneficios</p>
+
+    <div style="display:flex;border-bottom:3px solid #e0e0e0;margin:2rem 0;">
+      <button id="tab-login" onclick="cambiarTab('login')" style="flex:1;padding:1rem 2rem;border:none;background:none;font-size:1.1rem;font-weight:700;color:#667eea;border-bottom:3px solid #667eea;cursor:pointer;transition:all 0.3s;">
+        🔒 Iniciar Sesión
+      </button>
+      <button id="tab-registro" onclick="cambiarTab('registro')" style="flex:1;padding:1rem 2rem;border:none;background:none;font-size:1.1rem;font-weight:600;color:#999;border-bottom:3px solid transparent;cursor:pointer;transition:all 0.3s;">
+        📝 Crear Cuenta
+      </button>
+    </div>
+
+    <div id="panel-login" class="section">
+      <h2>🔒 Iniciar Sesión</h2>
+      <p>¿Ya tienes cuenta? Ingresa con tu email y contraseña</p>
+      
+      <form id="loginForm">
+        <label>Email *</label>
+        <input type="email" id="loginEmail" placeholder="tu@email.com" required>
+        
+        <label>Contraseña *</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" required>
+        
+        <label style="display: flex; align-items: center; gap: 0.5rem;">
+          <input type="checkbox">
+          <span>Recordarme</span>
+        </label>
+        
+        <button type="submit">Iniciar Sesión</button>
+        
+        <p style="text-align: center; margin-top: 1rem;">
+          <a href="#recuperar" style="color: #667eea;">¿Olvidaste tu contraseña?</a>
+        </p>
+      </form>
+
+      <div style="margin: 2rem 0; text-align: center; position: relative;">
+        <hr style="border: none; border-top: 1px solid #ddd;">
+        <span style="background: white; padding: 0 1rem; position: relative; top: -12px;">o inicia sesión con</span>
+      </div>
+
+      <div class="flex-container" style="gap: 1rem;">
+        <button style="flex: 1; background: #3b5998;">
+          <span style="font-size: 1.2rem;">f</span> Facebook
+        </button>
+        <button style="flex: 1; background: #db4437;">
+          <span style="font-size: 1.2rem;">G</span> Google
+        </button>
+      </div>
+    </div>
+
+    <div id="panel-registro" class="section" style="display:none;">
+      <h2>📝 Crear Cuenta Nueva</h2>
+      <p>Regístrate y disfruta de beneficios exclusivos</p>
+      
+      <form id="registerForm">
+        <label>Nombre Completo *</label>
+        <input type="text" id="regNombre" placeholder="Juan Pérez" required>
+        
+        <label>Email *</label>
+        <input type="email" id="regEmail" placeholder="tu@email.com" required>
+        
+        <label>Teléfono *</label>
+        <input type="tel" id="regTelefono" placeholder="+51 999 999 999" required>
+        
+        <label>Contraseña *</label>
+        <input type="password" id="regPassword" placeholder="Mínimo 8 caracteres" required minlength="8">
+        
+        <label>Confirmar Contraseña *</label>
+        <input type="password" id="regPasswordConfirm" placeholder="Repite tu contraseña" required minlength="8">
+        
+        <label style="display: flex; align-items: flex-start; gap: 0.5rem;">
+          <input type="checkbox" required>
+          <span style="font-size: 0.9rem;">Acepto los <a href="politicas.html" style="color: #667eea;">Términos y Condiciones</a> y la <a href="politicas.html#privacidad" style="color: #667eea;">Política de Privacidad</a></span>
+        </label>
+        
+        <label style="display: flex; align-items: center; gap: 0.5rem;">
+          <input type="checkbox">
+          <span style="font-size: 0.9rem;">Quiero recibir ofertas y promociones por email</span>
+        </label>
+        
+        <button type="submit">Crear Cuenta</button>
+      </form>
+    </div>
+
+    <section class="section">
+      <h2 class="text-center">✨ Beneficios de Crear una Cuenta</h2>
+      <div class="grid-container">
+        <div class="grid-item text-center">
+          <div class="social-btn facebook" style="font-size: 2rem; margin: 0 auto 1rem;">🛒</div>
+          <h3>Compras Más Rápidas</h3>
+          <p>Guarda tus direcciones y métodos de pago para un checkout más rápido</p>
+        </div>
+        <div class="grid-item text-center">
+          <div class="social-btn instagram" style="font-size: 2rem; margin: 0 auto 1rem;">📦</div>
+          <h3>Historial de Pedidos</h3>
+          <p>Revisa todos tus pedidos anteriores y realiza recompras fácilmente</p>
+        </div>
+        <div class="grid-item text-center">
+          <div class="social-btn twitter" style="font-size: 2rem; margin: 0 auto 1rem;">❤️</div>
+          <h3>Lista de Favoritos</h3>
+          <p>Guarda tus productos favoritos y recibe alertas de ofertas</p>
+        </div>
+        <div class="grid-item text-center">
+          <div class="social-btn whatsapp" style="font-size: 2rem; margin: 0 auto 1rem;">🎁</div>
+          <h3>Ofertas Exclusivas</h3>
+          <p>Accede a descuentos y promociones especiales solo para miembros</p>
+        </div>
+        <div class="grid-item text-center">
+          <div class="social-btn youtube" style="font-size: 2rem; margin: 0 auto 1rem;">🏆</div>
+          <h3>Programa de Puntos</h3>
+          <p>Acumula puntos en cada compra y canjéalos por descuentos</p>
+        </div>
+        <div class="grid-item text-center">
+          <div class="social-btn facebook" style="font-size: 2rem; margin: 0 auto 1rem;">🔔</div>
+          <h3>Notificaciones</h3>
+          <p>Recibe actualizaciones de tus pedidos y novedades del catálogo</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="recuperar" class="section">
+      <h2>🔓 Recuperar Contraseña</h2>
+      <p>¿Olvidaste tu contraseña? No te preocupes, te enviaremos un enlace para restablecerla.</p>
+      
+      <form id="recuperarForm" style="max-width: 500px; margin: 0 auto;">
+        <label>Email de tu cuenta *</label>
+        <input type="email" id="recuperarEmail" placeholder="tu@email.com" required>
+        
+        <button type="submit">Enviar Enlace de Recuperación</button>
+        
+        <div class="message info" style="margin-top: 1rem;">
+          <strong>📧 Nota:</strong> Te enviaremos un email con instrucciones para restablecer tu contraseña. El enlace será válido por 24 horas.
+        </div>
+      </form>
+    </section>
+
+    <section class="section">
+      <h2>❓ Preguntas Frecuentes</h2>
+      
+      <h3>¿Es necesario crear una cuenta para comprar?</h3>
+      <p>No es obligatorio, pero te recomendamos crear una cuenta para disfrutar de todos los beneficios y hacer seguimiento de tus pedidos.</p>
+      
+      <h3>¿Es seguro registrar mi información?</h3>
+      <p>Sí, toda tu información está protegida con encriptación SSL y cumplimos con las normativas de protección de datos.</p>
+      
+      <h3>¿Puedo cambiar mi email después de registrarme?</h3>
+      <p>Sí, puedes actualizar tu email y toda tu información desde tu perfil de usuario.</p>
+      
+      <h3>¿Qué hago si no recibo el email de confirmación?</h3>
+      <p>Revisa tu carpeta de spam. Si no lo encuentras, contáctanos al +51 999 999 999 para reenviarlo.</p>
+      
+      <h3>¿Puedo eliminar mi cuenta?</h3>
+      <p>Sí, puedes solicitar la eliminación de tu cuenta contactándonos. Se eliminarán todos tus datos según nuestra política de privacidad.</p>
+      
+      <h3>¿Cómo funciona el programa de puntos?</h3>
+      <p>Por cada S/ 10 de compra acumulas 1 punto. Cada 100 puntos equivalen a S/ 10 de descuento en tu próxima compra.</p>
+    </section>
+
+    <section class="section">
+      <h2>🔒 Seguridad de tu Cuenta</h2>
+      <div class="flex-container">
+        <div class="flex-item">
+          <h4>🛡️ Protección de Datos</h4>
+          <p>Tu información personal está protegida con tecnología de encriptación de última generación</p>
+        </div>
+        <div class="flex-item">
+          <h4>🔐 Contraseñas Seguras</h4>
+          <p>Usa contraseñas de al menos 8 caracteres con letras, números y símbolos</p>
+        </div>
+        <div class="flex-item">
+          <h4>✅ Verificación en Dos Pasos</h4>
+          <p>Opcional: Activa la verificación en dos pasos para mayor seguridad</p>
+        </div>
+      </div>
+
+      <h3>Consejos de Seguridad:</h3>
+      <ul>
+        <li>✓ No compartas tu contraseña con nadie</li>
+        <li>✓ Usa una contraseña única para DecoHome</li>
+        <li>✓ Cierra sesión en dispositivos compartidos</li>
+        <li>✓ Revisa regularmente tu historial de pedidos</li>
+        <li>✓ Actualiza tu contraseña cada 3-6 meses</li>
+        <li>✓ No hagas clic en enlaces sospechosos en emails</li>
+      </ul>
+    </section>
+
+    <div class="cta-section">
+      <h2>¿Necesitas Ayuda?</h2>
+      <p>Nuestro equipo de soporte está disponible para ayudarte con tu cuenta</p>
+      <a href="contacto.html" class="btn btn-primary">Contactar Soporte</a>
+      <a href="https://wa.me/51999999999" class="btn btn-secondary" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>DecoHome</h3>
+        <p>Tu hogar, tu estilo, nuestra pasión.</p>
+        <p>📍 Av. Principal 123, Arequipa</p>
+        <p>📞 +51 999 999 999</p>
+        <p>✉️ soporte@decohome.pe</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Mi Cuenta</h3>
+        <ul>
+          <li><a href="registro.html">Crear Cuenta</a></li>
+          <li><a href="registro.html">Iniciar Sesión</a></li>
+          <li><a href="registro.html#recuperar">Recuperar Contraseña</a></li>
+          <li><a href="carrito.html">Mi Carrito</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="politicas.html">Términos y Condiciones</a></li>
+          <li><a href="politicas.html#privacidad">Política de Privacidad</a></li>
+          <li><a href="envios.html">Envíos</a></li>
+          <li><a href="pago.html">Métodos de Pago</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Horario de Atención</h3>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
+        <p>Sábados: 9:00 - 14:00</p>
+        <p>Domingos: Cerrado</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 DecoHome - Christian Jesús Chambi Quispe | Todos los derechos reservados</p>
+    </div>
+  </footer>
+  <script src="js/Sesion.js"></script>
+</body>
+</html>

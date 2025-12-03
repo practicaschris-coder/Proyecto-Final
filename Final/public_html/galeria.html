@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería de proyectos realizados por DecoHome">
+  <meta name="keywords" content="galería, proyectos, decoración, antes y después">
+  <title>DecoHome - Galería</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/utils.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/dom-manager.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/ui-handlers.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/init.js"></script></head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🏠</div>
+        <span>DecoHome</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación">☰</button>
+      <nav id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="galeria.html" class="active">Galería</a>
+        <a href="politicas.html">Politica</a>
+        <a href="envios.html">Envios</a>
+        <a href="pago.html">Pago</a>
+        <a href="registro.html">Registro</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&h=400&fit=crop" alt="Galería DecoHome">
+    <div class="banner-overlay">
+      <h2>Nuestros Proyectos Realizados</h2>
+    </div>
+  </div>
+
+  <!-- Contenido Principal -->
+  <div class="container">
+    <h2 class="text-center">Galería de Transformaciones</h2>
+    <p class="text-center">
+      Descubre cómo hemos transformado espacios en hogares únicos y acogedores. 
+      Cada proyecto refleja el estilo y personalidad de nuestros clientes.
+    </p>
+
+    <!-- Galería Principal con Grid Layout -->
+    <h3 class="text-center m-4">🏡 Proyectos Destacados</h3>
+    <div class="grid-container">
+      <!-- Proyecto 1 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop" alt="Sala Moderna" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Sala Moderna</h3>
+          <p>Transformación completa con estilo minimalista y colores neutros.</p>
+          <p><strong>Cliente:</strong> María G.</p>
+          <p><strong>Ubicación:</strong> Yanahuara, Arequipa</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop" alt="Dormitorio" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Dormitorio Bohemio</h3>
+          <p>Espacio acogedor con textiles naturales y colores cálidos.</p>
+          <p><strong>Cliente:</strong> Carlos R.</p>
+          <p><strong>Ubicación:</strong> Cayma, Arequipa</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=400&h=300&fit=crop" alt="Comedor" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Comedor Elegante</h3>
+          <p>Diseño sofisticado con iluminación estratégica y detalles dorados.</p>
+          <p><strong>Cliente:</strong> Ana M.</p>
+          <p><strong>Ubicación:</strong> Cerro Colorado</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 4 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&h=300&fit=crop" alt="Cocina" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Cocina Funcional</h3>
+          <p>Optimización de espacios con diseño contemporáneo y práctico.</p>
+          <p><strong>Cliente:</strong> Luis P.</p>
+          <p><strong>Ubicación:</strong> Hunter, Arequipa</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 5 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=300&fit=crop" alt="Estudio" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Estudio Home Office</h3>
+          <p>Espacio de trabajo inspirador con organización inteligente.</p>
+          <p><strong>Cliente:</strong> Patricia L.</p>
+          <p><strong>Ubicación:</strong> José Luis Bustamante</p>
+        </div>
+      </div>
+
+      <!-- Proyecto 6 -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=400&h=300&fit=crop" alt="Terraza" class="product-image">
+        <div class="product-info">
+          <h3 class="product-title">Terraza Relax</h3>
+          <p>Área exterior convertida en oasis personal con plantas y textiles.</p>
+          <p><strong>Cliente:</strong> Roberto S.</p>
+          <p><strong>Ubicación:</strong> Sachaca, Arequipa</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Antes y Después con Flexbox -->
+    <h3 class="text-center m-4">✨ Transformaciones: Antes y Después</h3>
+    
+    <div class="flex-container">
+      <div class="flex-item">
+        <h4 class="text-center">ANTES</h4>
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=300&fit=crop" alt="Antes 1">
+        <p class="text-center">Sala sin personalidad</p>
+      </div>
+      <div class="flex-item">
+        <h4 class="text-center">DESPUÉS</h4>
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop" alt="Después 1">
+        <p class="text-center">Sala moderna y acogedora</p>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item">
+        <h4 class="text-center">ANTES</h4>
+        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=300&fit=crop" alt="Antes 2">
+        <p class="text-center">Dormitorio simple</p>
+      </div>
+      <div class="flex-item">
+        <h4 class="text-center">DESPUÉS</h4>
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop" alt="Después 2">
+        <p class="text-center">Dormitorio bohemio elegante</p>
+      </div>
+    </div>
+
+    <!-- Tabla con Estadísticas de Proyectos -->
+    <h3 class="text-center m-4">📊 Estadísticas de Proyectos 2024</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo de Proyecto</th>
+          <th>Cantidad</th>
+          <th>Satisfacción</th>
+          <th>Tiempo Promedio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Salas de Estar</td>
+          <td>45 proyectos</td>
+          <td>⭐⭐⭐⭐⭐ 4.9/5</td>
+          <td>2 semanas</td>
+        </tr>
+        <tr>
+          <td>Dormitorios</td>
+          <td>38 proyectos</td>
+          <td>⭐⭐⭐⭐⭐ 4.8/5</td>
+          <td>10 días</td>
+        </tr>
+        <tr>
+          <td>Comedores</td>
+          <td>28 proyectos</td>
+          <td>⭐⭐⭐⭐⭐ 5.0/5</td>
+          <td>1 semana</td>
+        </tr>
+        <tr>
+          <td>Cocinas</td>
+          <td>22 proyectos</td>
+          <td>⭐⭐⭐⭐⭐ 4.7/5</td>
+          <td>3 semanas</td>
+        </tr>
+        <tr>
+          <td>Home Office</td>
+          <td>35 proyectos</td>
+          <td>⭐⭐⭐⭐⭐ 4.9/5</td>
+          <td>5 días</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Categorías con Grid Areas -->
+    <h3 class="text-center m-4">🎨 Estilos que Trabajamos</h3>
+    <div class="grid-areas">
+      <div class="grid-header">
+        <h3 class="text-center">Nuestras Especialidades</h3>
+      </div>
+      <div class="grid-sidebar">
+        <h4>Moderno</h4>
+        <p>Líneas limpias, colores neutros y minimalismo funcional.</p>
+      </div>
+      <div class="grid-main">
+        <h4>Clásico</h4>
+        <p>Elegancia atemporal con muebles tradicionales y detalles refinados.</p>
+        <br>
+        <h4>Industrial</h4>
+        <p>Materiales crudos, metal y madera con estética urbana.</p>
+      </div>
+      <div class="grid-footer">
+        <h4 class="text-center">Bohemio • Escandinavo • Rústico • Contemporáneo</h4>
+      </div>
+    </div>
+
+    <!-- Video de Proyecto -->
+    <h3 class="text-center m-4">🎬 Proceso de Transformación</h3>
+    <div class="banner-container">
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Galería de Productos Utilizados con Flexbox -->
+    <h3 class="text-center m-4">🛋️ Productos Más Utilizados</h3>
+    <div class="flex-container">
+      <div class="flex-item text-center">
+        <img src="https://www.dkohome.cl/web/image/product.template/49983/image_256/%5B230008960%5D%20Alfombra%2090cm%20yute%20black?unique=00aa4be" alt="Alfombra" style="border-radius: 8px;">
+        <h4>Alfombras Boho</h4>
+        <p>Usadas en 45 proyectos</p>
+      </div>
+      <div class="flex-item text-center">
+        <img src="https://media.doitcenter.com.pa/media/catalog/product/4/0/4031337_4_c5nmt94t6hsk676k.jpg?quality=85&fit=bounds&height=&width=256" alt="Cojines" style="border-radius: 8px;">
+        <h4>Cojines Decorativos</h4>
+        <p>Usados en 60 proyectos</p>
+      </div>
+      <div class="flex-item text-center">
+        <img src="https://images.unsplash.com/photo-1513519245088-0e3ad4e6c1a6?w=256&h=256&fit=crop" alt="Cortinas" style="border-radius: 8px;">
+        <h4>Cortinas Premium</h4>
+        <p>Usadas en 38 proyectos</p>
+      </div>
+    </div>
+
+    <!-- Barra Lateral con Categorías -->
+    <div class="flex-container">
+      <div class="sidebar">
+        <h3>Filtrar por Estilo</h3>
+        <div class="sidebar-item">🏛️ Clásico</div>
+        <div class="sidebar-item">🏢 Moderno</div>
+        <div class="sidebar-item">🌿 Bohemio</div>
+        <div class="sidebar-item">⚙️ Industrial</div>
+        <div class="sidebar-item">❄️ Escandinavo</div>
+        <div class="sidebar-item">🌾 Rústico</div>
+      </div>
+
+      <div class="flex-item" style="flex: 3;">
+        <h3>Información Adicional</h3>
+        <p>
+          Cada proyecto es único y personalizado según las necesidades y gustos de nuestros clientes. 
+          Trabajamos con materiales de primera calidad y nos aseguramos de que cada detalle refleje 
+          la visión del cliente.
+        </p>
+        <p>
+          <strong>Proceso de trabajo:</strong> Desde la consulta inicial hasta la entrega final, 
+          acompañamos a nuestros clientes en cada paso del proceso de transformación.
+        </p>
+        <p>
+          <strong>Garantía:</strong> Todos nuestros proyectos cuentan con garantía de satisfacción. 
+          Si no estás 100% satisfecho, trabajamos hasta lograrlo.
+        </p>
+      </div>
+    </div>
+
+    <!-- Testimonios con Imágenes -->
+    <h3 class="text-center m-4">💬 Lo que Dicen Nuestros Clientes</h3>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="flex-center">
+          <div class="social-btn instagram" style="margin-bottom: 1rem;">👤</div>
+        </div>
+        <p class="text-center">
+          <strong>María González</strong><br>
+          ⭐⭐⭐⭐⭐<br>
+          "Transformaron mi sala completamente. Superó todas mis expectativas."
+        </p>
+      </div>
+
+      <div class="grid-item">
+        <div class="flex-center">
+          <div class="social-btn facebook" style="margin-bottom: 1rem;">👤</div>
+        </div>
+        <p class="text-center">
+          <strong>Carlos Ramírez</strong><br>
+          ⭐⭐⭐⭐⭐<br>
+          "Profesionales, puntuales y con excelente atención. 100% recomendados."
+        </p>
+      </div>
+
+      <div class="grid-item">
+        <div class="flex-center">
+          <div class="social-btn twitter" style="margin-bottom: 1rem;">👤</div>
+        </div>
+        <p class="text-center">
+          <strong>Ana Martínez</strong><br>
+          ⭐⭐⭐⭐⭐<br>
+          "Mi dormitorio quedó de ensueño. Valió cada sol invertido."
+        </p>
+      </div>
+    </div>
+
+    <!-- Marquee con anuncios -->
+    <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; margin: 2rem 0; overflow: hidden;">
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        🎉 PROMOCIÓN: 20% de descuento en proyectos de diseño completo este mes • 
+        ✨ Consulta gratuita para nuevos clientes • 
+        🏆 Premiados como Mejor Tienda de Decoración 2024 • 
+        📞 Contáctanos: +51 999 999 999
+      </marquee>
+    </div>
+
+    <!-- CTA para Contacto -->
+    <div class="cta-section">
+      <h2>¿Listo para Transformar tu Espacio?</h2>
+      <p>Agenda una consulta gratuita y empieza tu proyecto hoy mismo</p>
+      <a href="contacto.html" class="btn btn-primary">Agendar Consulta</a>
+      <a href="servicios.html" class="btn btn-secondary">Ver Servicios</a>
+    </div>
+  </div>
+
+  <!-- Redes Sociales -->
+  <div class="container">
+    <h3 class="text-center">Síguenos para Más Inspiración</h3>
+    <div class="social-links">
+      <a href="https://facebook.com/decohome" target="_blank" class="social-btn facebook" title="Facebook">f</a>
+      <a href="https://twitter.com/decohome" target="_blank" class="social-btn twitter" title="Twitter">🐦</a>
+      <a href="https://instagram.com/decohome" target="_blank" class="social-btn instagram" title="Instagram">📷</a>
+      <a href="https://wa.me/51999999999" target="_blank" class="social-btn whatsapp" title="WhatsApp">💬</a>
+      <a href="https://youtube.com/decohome" target="_blank" class="social-btn youtube" title="YouTube">▶</a>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>DecoHome</h3>
+        <p>Transformando espacios desde 2020</p>
+        <p>📍 Av. Principal 123, Arequipa</p>
+        <p>📞 +51 999 999 999</p>
+        <p>✉️ galeria@decohome.pe</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Proyectos</h3>
+        <ul>
+          <li><a href="#salas">Salas</a></li>
+          <li><a href="#dormitorios">Dormitorios</a></li>
+          <li><a href="#comedores">Comedores</a></li>
+          <li><a href="#cocinas">Cocinas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Estilos</h3>
+        <ul>
+          <li><a href="#moderno">Moderno</a></li>
+          <li><a href="#clasico">Clásico</a></li>
+          <li><a href="#bohemio">Bohemio</a></li>
+          <li><a href="#industrial">Industrial</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Información</h3>
+        <ul>
+          <li><a href="nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 DecoHome - Christian Jesús Chambi Quispe | Galería de Proyectos</p>
+    </div>
+  </footer>
+</body>
+</html>
